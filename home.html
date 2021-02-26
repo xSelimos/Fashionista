@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="homecss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Fashionista</title>
+
+    <script>
+         var products =[
+
+{    id: 1,
+    category: "jeans",
+    name: "Ripped jeans",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg",
+    size: "XL",
+    color: "blue",
+    price: 20.99
+},
+{
+    id: 2,
+    category: "Jeans",
+    name: "Boyfriend jeans",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg",
+    size: "S",
+    color: "blue",
+    price: 24.99
+},
+{
+    id: 3,
+    category: "shirts",
+    name: "Ripped Sweatshirt",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg",
+    size: "XL",
+    color: "white",
+    price: 29.99
+},
+{
+    id: 4,
+    category: "Jackets",
+    name: "Denim Jacket",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg",
+    size: "M",
+    color: "grey",
+    price: 40.99
+},
+{
+    id: 5,
+    category: "Shirts",
+    name: "Longsleeve",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg",
+    size: "L",
+    color: "black",
+    price: 120.99
+},
+{
+    id: 6,
+    category: "jeans",
+    name: "Ripped Jeans",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg",
+    size: "XL",
+    color: "blue",
+    price: 20.99
+},
+{
+    id: 7,
+    category: "Jeans",
+    name: "Boyfriend Jeans",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg",
+    size: "S",
+    color: "blue",
+    price: 24.99
+},
+{
+    id: 8,
+    category: "Shirts",
+    name: "Ripped Sweatshirt",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg",
+    size: "XL",
+    color: "white",
+    price: 29.99
+},
+{
+    id: 9,
+    category: "Jackets",
+    name: "Denim Jacket",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg",
+    size: "M",
+    color: "grey",
+    price: 40.99
+},
+{
+    id: 10,
+    category: "Shirts",
+    name: "Longsleeve",
+    image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg",
+    size: "L",
+    color: "black",
+    price: 120.99
+}
+];
+    </script>
+</head>
+<body>
+
+    <!--- NavBar --> 
+
+    <nav class="navbar navbar-expand-lg navbar-light navcolors">
+        <div class="container-fluid">
+          <a class="navbar-brand navspace" href="#"> Fashionista </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item ">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--- main --> 
+    <script>
+                                         for(i=0;i<products.length;i++){
+                                            document.write('<li>'+products[i].image+'</li>')
+                                            document.write('<h4>'+products[i].name+'</h4>')
+                                            document.write('<h6>'+products[i].price+'</h6>')
+
+                                         }
+
+    </script>
+
+    
+</body>
+</html>
